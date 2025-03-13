@@ -1,4 +1,4 @@
-#🚀 Bot Maitrix Faucet
+# 🚀 Bot Maitrix Faucet
 
 Automasi untuk membuat wallet, mengirim ETH, dan klaim faucet secara massal menggunakan Node.js & Ethers.js.
 

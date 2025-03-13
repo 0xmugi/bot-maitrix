@@ -15,8 +15,11 @@ Mengirim semua token faucet yang sudah diklaim ke wallet utama
 # 📂 Fitur
 
 ✅ Generate banyak wallet dengan private key yang disimpan di pk.txt
+
 ✅ Mengirim ETH ke banyak wallet dari file addresses.txt
+
 ✅ Mengklaim faucet secara otomatis dengan opsi proxy atau tanpa proxy
+
 ✅ Mengirim semua token yang diklaim ke wallet yang diinginkan menggunakan bulk_send_ATH.js
 
 # 🛠️ Instalasi

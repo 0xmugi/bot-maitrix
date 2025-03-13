@@ -33,9 +33,8 @@ Install dependencies
 
 npm install
 
-Buat file .env dan tambahkan private key Anda:
+file .env dan tambahkan private key Anda: PRIVATE_KEY=0xYOUR_PRIVATE_KEY
 
-PRIVATE_KEY=0xYOUR_PRIVATE_KEY
 
 # 🚀 Penggunaan
 

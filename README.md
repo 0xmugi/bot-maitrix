@@ -77,5 +77,5 @@ const receiverAddress = '0xYourMainWalletAddress';
 
 Gunakan script ini dengan bijak. Penggunaan berlebihan atau pelanggaran aturan faucet dapat menyebabkan pemblokiran!
 
-# 💡 Contributors: 0xMugi
-# 📌 Repository: [[GitHub Link](https://github.com/0xmugi/)]
+💡 Contributors: 0xMugi
+📌 Repository: [[GitHub Link](https://github.com/0xmugi/)]

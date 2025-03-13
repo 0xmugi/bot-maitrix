@@ -1,67 +1,82 @@
-# 🚀 Bot Maitrix Faucet
+# 🚀 Bot Maitrix Faucet & Bulk Sender
 
-Automasi untuk membuat wallet, mengirim ETH, dan klaim faucet secara massal menggunakan Node.js & Ethers.js.
+# 📌 Deskripsi
 
-# 📌 Fitur
+Bot ini digunakan untuk:
 
-Membuat wallet secara massal
+Membuat banyak wallet (batch wallet generator)
 
-Mengirim ETH ke banyak wallet
+Mengirim ETH ke banyak wallet secara otomatis (bulk send ETH)
 
-Mengklaim faucet secara otomatis (dengan atau tanpa proxy)
+Mengklaim faucet untuk wallet yang dibuat
 
-Melanjutkan ke step 3 langsung jika sudah punya wallet & ETH
+Mengirim semua token faucet yang sudah diklaim ke wallet utama
 
-Log transaksi dan klaim yang gagal
+# 📂 Fitur
+
+✅ Generate banyak wallet dengan private key yang disimpan di pk.txt
+✅ Mengirim ETH ke banyak wallet dari file addresses.txt
+✅ Mengklaim faucet secara otomatis dengan opsi proxy atau tanpa proxy
+✅ Mengirim semua token yang diklaim ke wallet yang diinginkan menggunakan bulk_send_ATH.js
 
 # 🛠️ Instalasi
 
-Pastikan Anda telah menginstal Node.js dan memiliki akun GitHub.
+Clone repositori ini
 
-# 1️⃣ Clone Repository
+git clone https://github.com/username/repository.git
+cd repository
 
-git clone https://github.com/username/bot-maitrix.git
-cd bot-maitrix
-
-# 2️⃣ Install Dependencies
+Install dependencies
 
 npm install
 
-# 3️⃣ Konfigurasi Environment
+Buat file .env dan tambahkan private key Anda:
 
-Buat file .env di root proyek dan tambahkan private key:
+PRIVATE_KEY=0xYOUR_PRIVATE_KEY
 
-PRIVATE_KEY="0xYOUR_PRIVATE_KEY_HERE"
+# 🚀 Penggunaan
 
-# ⚠️ Jangan bagikan private key Anda!
-
-# 🚀 Cara Menggunakan
-
-Jalankan script dengan perintah berikut:
+# 1️⃣ Membuat Wallet
 
 node claim.js
 
-Kemudian, pilih opsi yang ingin dijalankan:
-1️⃣ Buat Wallet2️⃣ Kirim ETH ke Wallet3️⃣ Klaim Faucet
+Masukkan jumlah wallet yang ingin dibuat
 
-Anda dapat langsung ke Step 3 jika sudah memiliki wallet dan ETH.
+Wallet dan private key akan disimpan di addresses.txt dan pk.txt
 
-# 📝 Log Transaksi & Klaim
+# 2️⃣ Mengirim ETH ke Wallet
 
-Wallet yang dibuat: addresses.txt
+node claim.js
 
-Private key wallet: pk.txt
+Setelah membuat wallet, ETH akan dikirim secara otomatis
 
-Log transaksi & klaim gagal: Ditampilkan di terminal
+# 3️⃣ Klaim Faucet
+
+node claim.js
+
+Pilih metode klaim: 1 untuk Proxy, 2 untuk tanpa Proxy
+
+Jika ada kegagalan di step 3, Anda bisa langsung mengulang hanya bagian klaim tanpa mengulang step 1 & 2
+
+# 4️⃣ Mengirim Semua Token ke Wallet Tujuan
+
+node bulk_send_ATH.js
+
+Semua faucet yang diklaim akan dikirim ke wallet utama yang ditentukan
+
+# 📝 Konfigurasi
+
+Ganti wallet tujuan di bulk_send_ATH.js:
+
+const receiverAddress = '0xYourMainWalletAddress';
+
+Ganti jumlah token yang dikirim di bulk_send_ATH.js:
+
+const amount = web3.utils.toWei('50', 'ether');
 
 # ⚠️ Disclaimer
 
-Script ini hanya untuk keperluan edukasi. Gunakan dengan bijak dan tanggung jawab.
+Gunakan script ini dengan bijak. Penggunaan berlebihan atau pelanggaran aturan faucet dapat menyebabkan pemblokiran!
 
-# 🤝 Kontribusi
-
-Pull request dipersilakan! Jika ada masalah, silakan buat issue.
-
-# 📄 Lisensi
-
-MIT License.
+# 💡 Contributors: 0xMugi
+# 📌 Repository: [[GitHub Link](https://github.com/0xmugi/)]

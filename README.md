@@ -23,7 +23,7 @@ Mengirim semua token faucet yang sudah diklaim ke wallet utama
 
 Clone repositori ini
 
-git clone https://github.com/username/repository.git
+git clone https://github.com/0xmugi/bot-maitrix.git
 cd repository
 
 Install dependencies

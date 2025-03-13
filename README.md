@@ -72,9 +72,6 @@ Ganti wallet tujuan di bulk_send_ATH.js:
 
 const receiverAddress = '0xYourMainWalletAddress';
 
-Ganti jumlah token yang dikirim di bulk_send_ATH.js:
-
-const amount = web3.utils.toWei('50', 'ether');
 
 # ⚠️ Disclaimer
 
